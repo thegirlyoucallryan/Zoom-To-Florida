@@ -32,6 +32,40 @@ function initialize() {
   google.maps.event.addDomListener(window, "load", initialize);
 }
 
+//navbar
+
+const header = document.querySelector("header");
+const section = document.querySelector("#communities");
+const nav = document.querySelectorAll(".nav-link li");
+console.log(nav);
+const navChange = function (entries, observer) {
+  const [entry] = entries;
+  let nav = document.querySelectorAll(".nav-link");
+
+  if (!entry.isIntersecting) {
+    nav.forEach((link, index) => {
+      link.style.color = "#343a40";
+    });
+    if (entry.isVisbile) {
+      console.log(entry);
+      nav.forEach((link, index) => {
+        link.style.color = "white";
+      });
+    }
+
+    console.log(entry);
+  }
+};
+
+const headerObserver = new IntersectionObserver(navChange, {
+  root: null,
+  threshold: 0.1,
+});
+
+headerObserver.observe(header);
+
+///slider
+
 let sliderImages = document.querySelectorAll(".slide");
 let arrowLeft = document.getElementById("arrow-left");
 

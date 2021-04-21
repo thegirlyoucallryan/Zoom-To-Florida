@@ -126,12 +126,15 @@
   border-color: transparent #fff transparent transparent;
   left: 0;
   margin-left: 30px;
+  box-shadow: 1px 1px 2px black;
 }
+
 #arrow-right {
   border-width: 30px 0px 30px 40px;
   border-color: transparent transparent transparent #fff;
   right: 0;
   margin-right: 30px;
+  box-shadow: 1px 1px 2px black;
 }
 
 /*    Home */
