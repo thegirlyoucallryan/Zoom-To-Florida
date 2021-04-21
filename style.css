@@ -1,0 +1,312 @@
+.navbar {
+  font-family: montserrat;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background: #f4f4f4;
+  border-radius: 10em;
+  padding: 6px;
+  color: #435c78;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+/*header style*/
+.header {
+  font-family: montserrat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: breath 4s linear;
+  -webkit-box-shadow: 0px 0px 8px 2px #444444;
+  -moz-box-shadow: 0px 0px 8px 2px #444444;
+  box-shadow: 0px 0px 8px 2px #444444;
+}
+@keyframes breath {
+  0% {
+    background-size: 114% auto;
+  }
+  35% {
+    backgrond-size: 109% auto;
+  }
+  55% {
+    background-size: 105% auto;
+  }
+  85% {
+    background-size: 102% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+#slider,
+.wrap,
+#slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: breath 4s linear;
+}
+
+.slide1 {
+  background-image: url("https://housely.com/wp-content/uploads/2016/03/Skyline_UrbanPardise_0.jpg");
+}
+.slide2 {
+  background-image: url("https://i.redd.it/4hq7bynxtlz11.jpg");
+  height: 100vh;
+  width: 100%;
+}
+.slide3 {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic3.thetravelimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2019%2F07%2FDevils-Den-Florida.jpg&f=1&nofb=1");
+}
+
+.slide4 {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.rd.com%2Fwp-content%2Fuploads%2F2018%2F07%2Fshutterstock_740407951.jpg&f=1&nofb=1");
+}
+
+.slide5 {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.timeout.com%2Fimages%2F105260460%2Fimage.jpg&f=1&nofb=1");
+}
+
+.slide6 {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Forlandoinformer.com%2Fwp-content%2Fuploads%2F2015%2F12%2Fwizarding-world-diagon-alley-ranking-new-universal-openings.jpg&f=1&nofb=1");
+}
+
+#slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#slide-content span {
+  font-size: 5rem;
+  color: white;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+#arrow-right {
+  border-width: 30px 0px 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+/*    Home */
+
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  margin-left: 8em;
+  padding: 2em;
+}
+.description h1 {
+  font-size: 69px;
+  font-weight: bold;
+  color: white;
+  font-family: Merriweather;
+  text-shadow: 1px 1px 2px black;
+}
+
+.description p {
+  color: white;
+  font-size: 30px;
+  width: 95%;
+  margin-left: 2.6em;
+  text-align: left;
+  line-height: 1.5;
+}
+#profile-link {
+  border: 1px solid #435c78;
+  background: #435c78;
+  color: #fff;
+}
+
+/* Communities-Section */
+#communities a {
+  text-decoration: none;
+  color: #5a8cc4;
+  letter-spacing: 1px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+#communities a:hover {
+  font-size: 28px;
+}
+
+#communities h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+#communities li {
+  list-style-type: none;
+  margin-top: 3em;
+}
+#map-canvas {
+  height: 300px;
+  width: 360px;
+}
+#communities {
+  margin-top: 2em;
+}
+.row {
+  margin-top: 2em;
+}
+#communities h1 {
+  color: #435c78;
+  font-size: 42px;
+}
+#communities h2 {
+  color: #5a8cc4;
+  font-size: 22px;
+}
+.view-all-coms {
+  border: 1px solid #435c78;
+  margin-left: 40px;
+  background: #435c78;
+  color: white;
+}
+.info {
+  margin-top: 4em;
+}
+
+.properties {
+  margin: 4em 0;
+  position: relative;
+  height: 300px;
+}
+.properties h1 {
+  color: #f8470a;
+}
+
+.properties .item {
+  position: relative;
+}
+.properties .des {
+  background: #82a1c4;
+  font-size: 15px;
+  padding: 5px;
+  width: 110%;
+  color: #fff;
+  text-align: center;
+}
+
+.properties .item:hover .des {
+  height: 100%;
+  background: #82a1c4;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  top: 0;
+  border-bottom-left-radius: 10;
+}
+
+.contact-form {
+  display: block !important;
+  margin-right: auto;
+  margin-left: 2em;
+}
+
+.contact-form h1 {
+  margin-top: 1em;
+  padding: 1em 1px;
+  color: #435c78;
+  font-family: Montserrat;
+}
+
+.contact-form .right {
+  max-width: 600px;
+}
+.contact-form .right .btn-secondary {
+  background: #435c78;
+  color: #fff;
+  border: 0;
+}
+.contact-form .right .form-control::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .header {
+    margin-top: 250px;
+  }
+  .header h1 {
+    margin-top: 120px;
+  }
+
+  .overlay {
+    margin-top: 250px;
+    height: 98vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .description {
+      margin-left: 3em;
+    }
+    .description h1 {
+      font-size: 40px;
+      margin-right: 30em;
+    }
+
+    .description p {
+      font-size: 18px;
+    }
+
+    .header {
+      background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fluxury-houses.net%2Fwp-content%2Fuploads%2F2019%2F09%2F401-E-Rivo-Alto-Dr-Miami-Beach-Florida-1.jpg&f=1&nofb=1);
+    }
+  }
+}
